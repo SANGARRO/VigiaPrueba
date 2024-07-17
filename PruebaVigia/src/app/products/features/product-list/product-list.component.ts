@@ -9,12 +9,4 @@ import { Component, inject } from '@angular/core';
   styles: ``,
   providers: [ProductService],
 })
-export default class ProductListComponent {
-  private ProductService = inject(ProductService);
-
-  constructor() {
-    this.ProductService.getProducts().subscribe((products) => {
-      console.log(products);
-    });
-  }
-}
+export default class ProductListComponent {}
